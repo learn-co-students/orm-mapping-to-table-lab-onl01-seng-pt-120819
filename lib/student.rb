@@ -40,7 +40,9 @@ class Student
 
   def self.create(name:, grade:) #takes in a hash of attributes and uses metaprogramming to create a new student object.
     student = Student.new(name, grade)
+
     student.save #uses the #save method to save that student to the database
+    
     student #returns the new object that it instantiated
   end
 
